@@ -37,7 +37,6 @@ namespace CoursesAPI.Services.CoursesServices
 		{
 			
 			PersonDTO p = GetPersonBySSn(model.SSN);
-			System.Console.WriteLine(p);
 			if(p == null){
 				throw new AppObjectNotFoundException();
 			}
