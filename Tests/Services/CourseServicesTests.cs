@@ -127,14 +127,37 @@ namespace CoursesAPI.Tests.Services
 		[TestMethod]
 		public void GetCoursesBySemester_GetsCoursesBySemester(){
 			
-			string SemesterId = "20153";
+			string SemesterId = "20163";
 			
 			var result = _service.GetCourseInstancesBySemester(SemesterId);
-			var result2 = _service.GetCourseInstancesBySemester();
 
 			Assert.IsTrue(result.Count == 1);
-			Assert.IsTrue(result2.Count == 1);
+			Assert.IsTrue(result.ElementAt(0).CourseInstanceID == COURSEID_VEFT_20163);
 
+		}
+
+		[TestMethod]
+		public void GetCourseInstancesBySemester_GetCoursesWithNoSemester(){
+			
+			var result = _service.GetCourseInstancesBySemester();
+			Assert.IsTrue(result.Count == 1);
+			Assert.IsTrue(result.ElementAt(0).CourseInstanceID == COURSEID_VEFT_20153);
+
+		}
+
+		[TestMethod]
+		
+		public void GetCourseInstancesBySemester_VerifyThatTheresATeacher(){
+			var result = _service.GetCourseInstancesBySemester();
+
+			Assert.IsTrue(result.ElementAt(0).MainTeacher == "Daníel B. Sigurgeirsson");
+		}
+
+		[TestMethod]
+		public void GetCourseInstancesBySemester_NoTeacher(){
+			var result = _service.GetCourseInstancesBySemester("20163");
+
+			Assert.IsTrue(result.ElementAt(0).MainTeacher == "");
 		}
 
 		#endregion
