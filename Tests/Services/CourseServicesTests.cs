@@ -204,6 +204,7 @@ namespace CoursesAPI.Tests.Services
 			};
 
 			// Act: 
+			_service.AddTeacherToCourse(COURSEID_VEFT_20153, model);
 		}
 
 		/// <summary>
