@@ -36,7 +36,11 @@ namespace CoursesAPI.Services.CoursesServices
 		public PersonDTO AddTeacherToCourse(int courseInstanceID, AddTeacherViewModel model)
 		{
 			
-
+			PersonDTO p = GetPersonBySSn(model.SSN);
+			System.Console.WriteLine(p);
+			if(p == null){
+				throw new AppObjectNotFoundException();
+			}
 			// TODO: implement this logic!
 			CourseInstanceDTO course = GetCourseInstanceByCourseInstanceId(courseInstanceID);
 			
