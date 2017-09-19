@@ -126,6 +126,17 @@ namespace CoursesAPI.Tests.Services
 
 		// TODO!!! you should write more unit tests here!
 
+		[TestMethod]
+		public void GetCoursesBySemester_GetsCoursesBySemester(){
+			
+			string SemesterId = "20153";
+			
+			var result = _service.GetCourseInstancesBySemester(SemesterId);
+
+			Assert.IsTrue(result.Count == 1);
+
+		}
+
 		#endregion
 
 		#region AddTeacher
