@@ -117,9 +117,7 @@ namespace CoursesAPI.Tests.Services
 		public void GetCoursesBySemester_ReturnsEmptyListWhenNoDataDefined()
 		{
 			// Arrange:
-
 			// Act:
-
 			// Assert:
 			// Assert.True(true);
 		}
@@ -132,8 +130,10 @@ namespace CoursesAPI.Tests.Services
 			string SemesterId = "20153";
 			
 			var result = _service.GetCourseInstancesBySemester(SemesterId);
+			var result2 = _service.GetCourseInstancesBySemester();
 
 			Assert.IsTrue(result.Count == 1);
+			Assert.IsTrue(result2.Count == 1);
 
 		}
 

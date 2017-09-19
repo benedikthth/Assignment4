@@ -6232,38 +6232,40 @@
     ]
   },
   "packageFolders": {
-    "/home/benni/.nuget/packages/": {},
-    "/usr/share/dotnet/sdk/NuGetFallbackFolder": {}
+    "C:\\Users\\Snojo\\.nuget\\packages\\": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/benni/Desktop/School/VEFT/Assignment4/Tests/Tests.csproj",
+      "projectUniqueName": "C:\\Users\\Snojo\\Documents\\Vefþjonustur\\Assignment4\\Tests\\Tests.csproj",
       "projectName": "Tests",
-      "projectPath": "/home/benni/Desktop/School/VEFT/Assignment4/Tests/Tests.csproj",
-      "packagesPath": "/home/benni/.nuget/packages/",
-      "outputPath": "/home/benni/Desktop/School/VEFT/Assignment4/Tests/obj/",
+      "projectPath": "C:\\Users\\Snojo\\Documents\\Vefþjonustur\\Assignment4\\Tests\\Tests.csproj",
+      "packagesPath": "C:\\Users\\Snojo\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Snojo\\Documents\\Vefþjonustur\\Assignment4\\Tests\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "/usr/share/dotnet/sdk/NuGetFallbackFolder"
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "/home/benni/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\Snojo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp2.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "netcoreapp2.0": {
           "projectReferences": {
-            "/home/benni/Desktop/School/VEFT/Assignment4/Services/Services.csproj": {
-              "projectPath": "/home/benni/Desktop/School/VEFT/Assignment4/Services/Services.csproj"
+            "C:\\Users\\Snojo\\Documents\\Vefþjonustur\\Assignment4\\Services\\Services.csproj": {
+              "projectPath": "C:\\Users\\Snojo\\Documents\\Vefþjonustur\\Assignment4\\Services\\Services.csproj"
             },
-            "/home/benni/Desktop/School/VEFT/Assignment4/Models/Models.csproj": {
-              "projectPath": "/home/benni/Desktop/School/VEFT/Assignment4/Models/Models.csproj"
+            "C:\\Users\\Snojo\\Documents\\Vefþjonustur\\Assignment4\\Models\\Models.csproj": {
+              "projectPath": "C:\\Users\\Snojo\\Documents\\Vefþjonustur\\Assignment4\\Models\\Models.csproj"
             }
           }
         }
